@@ -63,13 +63,13 @@ module endereco::nome_do_modulo {
     O endereço pode ser encontrado no arquivo de configuração `Move.toml`, na seção `addresses`. No nosso caso:
     ```toml
     [addresses]
-    introduccion = "0x5A6F6E612054726573"
+    introducao = "0x5A6F6E612054726573"
     ```
 3. Nome do módulo, no nosso caso: `practica_sui`
 
 Portanto, nosso código fica assim:
 ```rust
-module introduccion::practica_sui {
+module introducao::practica_sui {
     // ...  resto do código
 }
 ```
@@ -102,7 +102,7 @@ E, por último, precisamos de uma forma de executar esta função. Por enquanto,
     }
 ```
 
-Ao executarmos `sui move test`, estamos dizendo à CLI para executar todas as funções que têm um bloco `[#test]`, neste caso, ele executa nossa função `teste`, que por sua vez chama a função `pratica`.
+Ao executarmos `sui move test`, estamos dizendo à CLI para executar todas as funções que têm um bloco `#[test]`, neste caso, ele executa nossa função `teste`, que por sua vez chama a função `pratica`.
 
 ## Saída
 
